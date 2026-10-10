@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qingtodo.acceptance">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36" />
+    <application android:label="QingTodo Acceptance" />
+    <instrumentation android:name="com.qingtodo.acceptance.AcceptanceRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.PreviewRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.RegressionRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.UpgradeRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.ScrollRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.ValidationRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.ThemeRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.AuditRunner" android:targetPackage="com.qingtodo.app" />
+    <instrumentation android:name="com.qingtodo.acceptance.ClearCompletedRunner" android:targetPackage="com.qingtodo.app" />
+</manifest>

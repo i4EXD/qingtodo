@@ -1,0 +1,120 @@
+轻待办 1.2.0 验证记录
+环境：Android 16 / API 36 模拟器，720 × 1600；系统字体 1.0 和 1.5 倍。
+升级、基础功能、交互回归、输入校验、主题与大字体共 88 项检查通过。
+APK zipalign 与 v2/v3 签名验证通过，签名证书和包名延续旧版。
+
+覆盖安装保留数据：1 项通过
+PASS: signed 1.1.0 -> 1.2.0 update preserves tasks, notes, completion and templates
+
+基础功能：20 项通过
+PASS: first launch: empty tasks and three removable starter templates
+PASS: empty state is visible
+PASS: blank titles are rejected
+PASS: adding a task can simultaneously save its custom template
+PASS: task title and note render on the home page
+PASS: tap task toggles completion on
+PASS: completed filter shows completed tasks
+PASS: unchecking completion immediately updates the active filter
+PASS: pending filter shows unchecked tasks
+PASS: editing a task leaves its saved template independent
+PASS: task delete removes the record
+PASS: undo restores the deleted task and its data
+PASS: a custom template can be applied repeatedly as independent tasks
+PASS: custom template creation persists
+PASS: custom templates can be edited
+PASS: custom templates can be deleted
+PASS: deleted templates can be restored
+PASS: tasks and custom templates survive closing and reopening the app
+PASS: the add sheet can fill both fields from a custom template
+PASS: template-filled add sheet saves a new task
+
+原有布局、交互与动画回归：19 项通过
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: double-tapping save creates exactly one record
+PASS: activity recreation keeps the open editor and its unsaved fields
+PASS: activity recreation also preserves the save-template choice
+PASS: a dismissed editor cannot clear the references of a newly opened editor
+PASS: the replacement editor remains fully usable
+PASS: long titles are shortened without splitting emoji surrogate pairs
+PASS: template View action refreshes the pending filter even after manually navigating home
+PASS: delete undo survives switching to another page
+PASS: undo can restore a task while viewing the template page
+PASS: undo survives activity recreation until its original deadline
+PASS: the restored undo action keeps the original task data
+PASS: native property animations are enabled during the interruption check
+PASS: completion animation prevents duplicate toggles and stale menu actions
+PASS: enabled page transitions animate translation and opacity before settling
+PASS: rapidly interrupted page transitions leave exactly one visible, fully opaque page
+PASS: the final page and action agree after rapid switching
+
+长清单滚动：2 项通过
+PASS: long task-list refresh preserves the measured scroll position
+PASS: switching pages preserves independent task scroll position
+
+Unicode 标题与旧记录恢复：4 项通过
+PASS: full-width and nonbreaking-space-only titles show an editor error and create no task
+PASS: the storage boundary also rejects Unicode-blank template names
+PASS: Unicode edge spaces are trimmed while emoji and internal spaces remain intact
+PASS: deletion undo restores a legacy Unicode-blank record and its data exactly
+
+8 种浅色主题：16 项通过
+PASS: requested light mode is actually active
+PASS: unknown stored palette ID falls back to the default safely
+PASS: all eight theme labels fit their measured native tiles
+PASS: 晴空蓝: selection, action colors, readable text and persisted ID agree
+PASS: 薄荷绿: selection, action colors, readable text and persisted ID agree
+PASS: 湖水青: selection, action colors, readable text and persisted ID agree
+PASS: 樱花粉: selection, action colors, readable text and persisted ID agree
+PASS: 暖杏橙: selection, action colors, readable text and persisted ID agree
+PASS: 珊瑚红: selection, action colors, readable text and persisted ID agree
+PASS: 雾霭灰蓝: selection, action colors, readable text and persisted ID agree
+PASS: 鸢尾紫: selection, action colors, readable text and persisted ID agree
+PASS: rotation preserves the open theme picker, selected color and template page
+PASS: all palette switches and rotation preserve tasks, notes, completion and templates
+PASS: changing color preserves the original delete-undo deadline
+PASS: undo remains usable after changing the theme
+PASS: template View action keeps working after the snackbar changes color
+
+独立进程重启后的主题设置：2 项通过
+PASS: requested light mode is actually active
+PASS: selected theme survives app-process restart and renders again
+
+8 种深色主题：16 项通过
+PASS: requested dark mode is actually active
+PASS: unknown stored palette ID falls back to the default safely
+PASS: all eight theme labels fit their measured native tiles
+PASS: 晴空蓝: selection, action colors, readable text and persisted ID agree
+PASS: 薄荷绿: selection, action colors, readable text and persisted ID agree
+PASS: 湖水青: selection, action colors, readable text and persisted ID agree
+PASS: 樱花粉: selection, action colors, readable text and persisted ID agree
+PASS: 暖杏橙: selection, action colors, readable text and persisted ID agree
+PASS: 珊瑚红: selection, action colors, readable text and persisted ID agree
+PASS: 雾霭灰蓝: selection, action colors, readable text and persisted ID agree
+PASS: 鸢尾紫: selection, action colors, readable text and persisted ID agree
+PASS: rotation preserves the open theme picker, selected color and template page
+PASS: all palette switches and rotation preserve tasks, notes, completion and templates
+PASS: changing color preserves the original delete-undo deadline
+PASS: undo remains usable after changing the theme
+PASS: template View action keeps working after the snackbar changes color
+
+1.5 倍字体底栏与按钮：5 项通过
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: the enlarged-font check actually runs at 1.5x font scale
+PASS: geometry also passes with the device's enlarged font scale
+
+1.5 倍字体主题选择器：3 项通过
+PASS: requested light mode is actually active
+PASS: all eight theme labels fit their measured native tiles
+PASS: theme picker remains readable with the device's 1.5x font scale
+
+排查说明：
+在 1.1.0 的真实编辑弹窗中复现了仅全角空格和不可换行空格仍可保存事项的问题。新版在界面和存储入口均拒绝该输入。
+旧版记录即使包含此类空白，删除撤销仍保持名称、备注、完成状态、创建时间和 ID 原样。
+滚动跳顶在本次旧版检查中未复现；新版改为布局后恢复位置，并通过长清单刷新和跨页检查。
+各主题均检查了实际按钮颜色、原生 colorAccent、设置持久化及主要文字颜色的对比度；主题不会修改清单数据库。
+最终检查期间的应用崩溃日志为空。原生界面预览由模拟器中测量后的 View 绘制，并目视核对。
+预览中的事项和模板为测试设备示例；APK 首次运行的待办清单为空。
