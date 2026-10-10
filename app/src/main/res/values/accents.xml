@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_purple">#5654D5</color>
+    <style name="AccentPurple"><item name="android:colorAccent">@color/accent_purple</item></style>
+    <color name="accent_blue">#2064B3</color>
+    <style name="AccentBlue"><item name="android:colorAccent">@color/accent_blue</item></style>
+    <color name="accent_mint">#236B48</color>
+    <style name="AccentMint"><item name="android:colorAccent">@color/accent_mint</item></style>
+    <color name="accent_teal">#006A68</color>
+    <style name="AccentTeal"><item name="android:colorAccent">@color/accent_teal</item></style>
+    <color name="accent_rose">#A33D69</color>
+    <style name="AccentRose"><item name="android:colorAccent">@color/accent_rose</item></style>
+    <color name="accent_orange">#9D5316</color>
+    <style name="AccentOrange"><item name="android:colorAccent">@color/accent_orange</item></style>
+    <color name="accent_coral">#AD403C</color>
+    <style name="AccentCoral"><item name="android:colorAccent">@color/accent_coral</item></style>
+    <color name="accent_slate">#4A5F78</color>
+    <style name="AccentSlate"><item name="android:colorAccent">@color/accent_slate</item></style>
+</resources>
