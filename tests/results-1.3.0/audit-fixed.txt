@@ -1,0 +1,11 @@
+
+B01 FIXED: zero-width-only title is rejected
+
+B02 FIXED: actual template chip text = ABCDEFGHIJKLM👨‍👩‍👧‍👦…
+
+B03 FIXED: editor selection before recreation = [2,5], after = [2,5]
+
+B04 FIXED: template View snackbar after recreation, original deadline remaining = 8451 ms
+
+PASS 4 correction checks
+

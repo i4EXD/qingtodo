@@ -1,0 +1,7 @@
+
+PASS: requested light mode is actually active
+PASS: selected theme survives app-process restart and renders again
+PASS 2 light theme checks
+PASS: requested light mode is actually active
+PASS: selected theme survives app-process restart and renders again
+

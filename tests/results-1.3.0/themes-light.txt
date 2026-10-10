@@ -1,0 +1,35 @@
+
+PASS: requested light mode is actually active
+PASS: unknown stored palette ID falls back to the default safely
+PASS: all eight theme labels fit their measured native tiles
+PASS: 晴空蓝: selection, action colors, readable text and persisted ID agree
+PASS: 薄荷绿: selection, action colors, readable text and persisted ID agree
+PASS: 湖水青: selection, action colors, readable text and persisted ID agree
+PASS: 樱花粉: selection, action colors, readable text and persisted ID agree
+PASS: 暖杏橙: selection, action colors, readable text and persisted ID agree
+PASS: 珊瑚红: selection, action colors, readable text and persisted ID agree
+PASS: 雾霭灰蓝: selection, action colors, readable text and persisted ID agree
+PASS: 鸢尾紫: selection, action colors, readable text and persisted ID agree
+PASS: rotation preserves the open theme picker, selected color and template page
+PASS: all palette switches and rotation preserve tasks, notes, completion and templates
+PASS: changing color preserves the original delete-undo deadline
+PASS: undo remains usable after changing the theme
+PASS: template View action keeps working after the snackbar changes color
+PASS 16 light theme checks
+PASS: requested light mode is actually active
+PASS: unknown stored palette ID falls back to the default safely
+PASS: all eight theme labels fit their measured native tiles
+PASS: 晴空蓝: selection, action colors, readable text and persisted ID agree
+PASS: 薄荷绿: selection, action colors, readable text and persisted ID agree
+PASS: 湖水青: selection, action colors, readable text and persisted ID agree
+PASS: 樱花粉: selection, action colors, readable text and persisted ID agree
+PASS: 暖杏橙: selection, action colors, readable text and persisted ID agree
+PASS: 珊瑚红: selection, action colors, readable text and persisted ID agree
+PASS: 雾霭灰蓝: selection, action colors, readable text and persisted ID agree
+PASS: 鸢尾紫: selection, action colors, readable text and persisted ID agree
+PASS: rotation preserves the open theme picker, selected color and template page
+PASS: all palette switches and rotation preserve tasks, notes, completion and templates
+PASS: changing color preserves the original delete-undo deadline
+PASS: undo remains usable after changing the theme
+PASS: template View action keeps working after the snackbar changes color
+

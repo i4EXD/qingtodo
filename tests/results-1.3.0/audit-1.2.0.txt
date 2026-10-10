@@ -1,0 +1,11 @@
+
+B01 REPRODUCED: U+200B U+FEFF U+2060 creates a task with a native text width of 0 px
+
+B02 REPRODUCED: actual template chip text = ABCDEFGHIJKLM👨…
+
+B03 REPRODUCED: editor selection before recreation = [2,5], after = [0,0]
+
+B04 REPRODUCED: template View snackbar after recreation, original deadline remaining = 7779 ms
+
+PASS 4 confirmed bug reproductions
+

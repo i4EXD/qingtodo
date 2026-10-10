@@ -1,0 +1,41 @@
+
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: double-tapping save creates exactly one record
+PASS: activity recreation keeps the open editor and its unsaved fields
+PASS: activity recreation also preserves the save-template choice
+PASS: a dismissed editor cannot clear the references of a newly opened editor
+PASS: the replacement editor remains fully usable
+PASS: long titles are shortened without splitting emoji surrogate pairs
+PASS: template View action refreshes the pending filter even after manually navigating home
+PASS: delete undo survives switching to another page
+PASS: undo can restore a task while viewing the template page
+PASS: undo survives activity recreation until its original deadline
+PASS: the restored undo action keeps the original task data
+PASS: native property animations are enabled during the interruption check
+PASS: completion animation prevents duplicate toggles and stale menu actions
+PASS: enabled page transitions animate translation and opacity before settling
+PASS: rapidly interrupted page transitions leave exactly one visible, fully opaque page
+PASS: the final page and action agree after rapid switching
+PASS 19 regression checks
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: double-tapping save creates exactly one record
+PASS: activity recreation keeps the open editor and its unsaved fields
+PASS: activity recreation also preserves the save-template choice
+PASS: a dismissed editor cannot clear the references of a newly opened editor
+PASS: the replacement editor remains fully usable
+PASS: long titles are shortened without splitting emoji surrogate pairs
+PASS: template View action refreshes the pending filter even after manually navigating home
+PASS: delete undo survives switching to another page
+PASS: undo can restore a task while viewing the template page
+PASS: undo survives activity recreation until its original deadline
+PASS: the restored undo action keeps the original task data
+PASS: native property animations are enabled during the interruption check
+PASS: completion animation prevents duplicate toggles and stale menu actions
+PASS: enabled page transitions animate translation and opacity before settling
+PASS: rapidly interrupted page transitions leave exactly one visible, fully opaque page
+PASS: the final page and action agree after rapid switching
+

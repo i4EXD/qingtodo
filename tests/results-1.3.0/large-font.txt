@@ -1,0 +1,13 @@
+
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: the enlarged-font check actually runs at 1.5x font scale
+PASS: geometry also passes with the device's enlarged font scale
+PASS 5 enlarged-font geometry checks
+PASS: home bottom-navigation glyphs share their icon centers
+PASS: add action occupies its own region outside the task viewport
+PASS: template navigation and action remain centered and never overlap list controls
+PASS: the enlarged-font check actually runs at 1.5x font scale
+PASS: geometry also passes with the device's enlarged font scale
+

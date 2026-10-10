@@ -1,0 +1,45 @@
+
+PASS: all filter keeps the cleanup entry in the completed filter
+
+PASS: pending filter has no completed cleanup button
+
+PASS: cleanup button text and touch area fit the measured native layout
+
+PASS: one click and a rapid duplicate click remove exactly two completed tasks
+
+PASS: bulk cleanup preserves every template
+
+PASS: zero completed tasks hide cleanup and expose batch undo
+
+PASS: page switches preserve the batch undo deadline
+
+PASS: activity recreation restores batch undo with the original deadline
+
+PASS: theme changes preserve batch undo and its deadline
+
+PASS: undo restores IDs, titles, notes, completion, timestamps and ordering exactly once
+
+PASS: cleanup with zero completed tasks keeps the existing batch undo
+
+PASS: a later single deletion replaces batch undo cleanly
+
+PASS: single-delete undo remains functional after bulk cleanup
+
+PASS: the real undo timeout removes the temporary batch snapshot
+
+PASS: an interrupted clear transaction rolls back both deletion and undo snapshot
+
+PASS: storage clears the current completed count
+
+PASS: a restore collision cannot partially restore or overwrite tasks
+
+PASS: the retained snapshot can restore all rows after a failed transaction
+
+PASS: 600 completed tasks with long notes clear as a single batch
+
+PASS: saved Activity state stays small for a large batch: 616 bytes
+
+PASS: large batch undo survives recreation and restores all 600 records exactly
+
+PASS 21 bulk cleanup checks
+

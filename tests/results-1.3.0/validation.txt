@@ -1,0 +1,5 @@
+PASS: full-width and nonbreaking-space-only titles show an editor error and create no task
+PASS: the storage boundary also rejects Unicode-blank template names
+PASS: Unicode edge spaces are trimmed while emoji and internal spaces remain intact
+PASS: deletion undo restores a legacy Unicode-blank record and its data exactly
+

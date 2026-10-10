@@ -1,0 +1,27 @@
+
+PASS: all filter keeps the cleanup entry in the completed filter
+
+PASS: pending filter has no completed cleanup button
+
+PASS: cleanup button text and touch area fit the measured native layout
+
+PASS: cleanup button remains readable at 1.5x font size
+
+PASS: one click and a rapid duplicate click remove exactly two completed tasks
+
+PASS: bulk cleanup preserves every template
+
+PASS: zero completed tasks hide cleanup and expose batch undo
+
+PASS: undo restores IDs, titles, notes, completion, timestamps and ordering exactly once
+
+PASS: all filter chips preserve the full native text layout at large font size
+
+PASS: editor save and preset buttons accommodate Chinese fallback font metrics
+
+PASS: theme Done button accommodates the full native text height
+
+PASS: About button accommodates the full native text height
+
+PASS 12 large-font cleanup checks
+

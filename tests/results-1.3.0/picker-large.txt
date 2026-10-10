@@ -1,0 +1,9 @@
+
+PASS: requested light mode is actually active
+PASS: all eight theme labels fit their measured native tiles
+PASS: theme picker remains readable with the device's 1.5x font scale
+PASS 3 light large-font theme checks
+PASS: requested light mode is actually active
+PASS: all eight theme labels fit their measured native tiles
+PASS: theme picker remains readable with the device's 1.5x font scale
+

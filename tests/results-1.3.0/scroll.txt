@@ -1,0 +1,3 @@
+PASS: long task-list refresh preserves the measured scroll position
+PASS: switching pages preserves independent task scroll position
+

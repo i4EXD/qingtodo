@@ -1,0 +1,19 @@
+{
+  "apkSHA256": "d167b107c383dbe037c997f3b5354b5df49c8f0c5b47a63c662caeb6fc693608",
+  "counts": {
+    "upgrade.txt": 1,
+    "audit-fixed.txt": 4,
+    "clear.txt": 21,
+    "acceptance.txt": 20,
+    "regression.txt": 19,
+    "scroll.txt": 2,
+    "validation.txt": 4,
+    "themes-light.txt": 16,
+    "restart.txt": 2,
+    "themes-dark.txt": 16,
+    "large-font.txt": 5,
+    "picker-large.txt": 3,
+    "clear-large.txt": 12
+  },
+  "total": 125
+}

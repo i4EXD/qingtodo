@@ -1,0 +1,44 @@
+
+PASS: first launch: empty tasks and three removable starter templates
+PASS: empty state is visible
+PASS: blank titles are rejected
+PASS: adding a task can simultaneously save its custom template
+PASS: task title and note render on the home page
+PASS: tap task toggles completion on
+PASS: completed filter shows completed tasks
+PASS: unchecking completion immediately updates the active filter
+PASS: pending filter shows unchecked tasks
+PASS: editing a task leaves its saved template independent
+PASS: task delete removes the record
+PASS: undo restores the deleted task and its data
+PASS: a custom template can be applied repeatedly as independent tasks
+PASS: custom template creation persists
+PASS: custom templates can be edited
+PASS: custom templates can be deleted
+PASS: deleted templates can be restored
+PASS: tasks and custom templates survive closing and reopening the app
+PASS: the add sheet can fill both fields from a custom template
+PASS: template-filled add sheet saves a new task
+PASS 20 acceptance checks
+PASS: first launch: empty tasks and three removable starter templates
+PASS: empty state is visible
+PASS: blank titles are rejected
+PASS: adding a task can simultaneously save its custom template
+PASS: task title and note render on the home page
+PASS: tap task toggles completion on
+PASS: completed filter shows completed tasks
+PASS: unchecking completion immediately updates the active filter
+PASS: pending filter shows unchecked tasks
+PASS: editing a task leaves its saved template independent
+PASS: task delete removes the record
+PASS: undo restores the deleted task and its data
+PASS: a custom template can be applied repeatedly as independent tasks
+PASS: custom template creation persists
+PASS: custom templates can be edited
+PASS: custom templates can be deleted
+PASS: deleted templates can be restored
+PASS: tasks and custom templates survive closing and reopening the app
+PASS: the add sheet can fill both fields from a custom template
+PASS: template-filled add sheet saves a new task
+Screenshots: /storage/emulated/0/Android/data/com.qingtodo.app/files/screenshots
+
