@@ -1,0 +1,38 @@
+{
+  "app": "轻待办",
+  "package": "com.qingtodo.app",
+  "version": "1.3.0",
+  "versionCode": 4,
+  "minimumAndroid": "8.0 (API 26)",
+  "targetAndroid": "16 (API 36)",
+  "architecture": "all Android ABIs (pure Java, no native libraries)",
+  "apkBytes": 53958,
+  "apkSHA256": "d167b107c383dbe037c997f3b5354b5df49c8f0c5b47a63c662caeb6fc693608",
+  "signingSchemes": [
+    "v2",
+    "v3"
+  ],
+  "permissions": [],
+  "themes": [
+    "purple",
+    "blue",
+    "mint",
+    "teal",
+    "rose",
+    "orange",
+    "coral",
+    "slate"
+  ],
+  "databaseVersion": 2,
+  "verification": {
+    "date": "2026-10-09",
+    "runtime": "Android 16 API 36 software emulator",
+    "checks": 125,
+    "fontScales": [
+      1.0,
+      1.5
+    ],
+    "originalBugReproductions": 4,
+    "bulkRows": 600
+  }
+}
